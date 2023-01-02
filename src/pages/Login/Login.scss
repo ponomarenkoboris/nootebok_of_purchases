@@ -1,0 +1,118 @@
+.login__page {
+    width: 100%;
+    height: calc(100vh - 70px);
+
+    .login__wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .login__form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .input__label {
+                cursor: pointer;
+                width: 60vw;
+                border-radius: 30px;
+                padding: 20px;
+                transition: box-shadow 300ms ease-in;
+
+                &:first-child {
+                    margin-bottom: 15px;
+                }
+
+                &:hover {
+                    box-shadow: 4px 4px 33px 0px rgba(34, 60, 80, 0.45);
+                }
+                
+                p  {
+                    width: 100%;
+                    font-size: 31px;
+                    padding: 10px 0 40px;
+                    margin: 0;
+                    text-shadow: #000000;
+                }
+                
+                input {
+                    border-radius: 10px;
+                    border: none;
+                    background-color: #e6e6e6;
+                    width: calc(100% - 30px);
+                    outline: none;
+                    font-size: 25px;
+                    padding: 8px 15px;
+                    color: rgba($color: #000000, $alpha: .6);
+                }
+            }
+
+            .form__submit {
+                margin-top: 40px;
+                cursor: pointer;
+                width: 100px;
+                border-radius: 30px;
+                border: none;
+                height: 50px;
+                font-size: 20px;
+                color: #ffffff;
+                background-color: rgba($color: #1e8f02, $alpha: .6);
+                transition: background-color 300ms ease-in, font-size 300ms ease-in, box-shadow 300ms ease-in;
+
+                &:hover {
+                    background-color: rgba($color: #1e8f02, $alpha: 1);
+                    box-shadow: 4px 4px 33px 0px rgba(34, 60, 80, 0.45);
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}
+
+.active__label {
+    cursor: pointer;
+    width: 60vw;
+    border-radius: 30px;
+    padding: 20px;
+    transition: box-shadow 300ms ease-in;
+    box-shadow: 4px 4px 33px 0px rgba(34, 60, 80, 0.45);
+
+    &:first-child {
+        margin-bottom: 15px;
+    }
+    
+    p  {
+        width: 100%;
+        font-size: 31px;
+        padding: 10px 0 40px;
+        margin: 0;
+        text-shadow: #000000;
+    }
+    
+    input {
+        border-radius: 10px;
+        border: none;
+        background-color: #e6e6e6;
+        width: calc(100% - 30px);
+        outline: none;
+        font-size: 25px;
+        padding: 8px 15px;
+        color: rgba($color: #000000, $alpha: .6);
+    }
+}
+
+.active__submit {
+    margin-top: 40px;
+    cursor: pointer;
+    width: 100px;
+    border-radius: 30px;
+    border: none;
+    height: 50px;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: rgba($color: #1e8f02, $alpha: 1);
+    box-shadow: 4px 4px 33px 0px rgba(34, 60, 80, 0.45);
+    font-size: 22px;
+    transition: background-color 300ms ease-in, font-size 300ms ease-in, box-shadow 300ms ease-in;
+}

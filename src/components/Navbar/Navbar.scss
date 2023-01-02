@@ -1,0 +1,44 @@
+header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(29, 118, 196);
+    color: white;
+
+    .navbar {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .link__wrapper {
+            margin: 0 5px;
+            
+            .page__link {
+                text-decoration: none;
+                color: white;
+                display: block;                
+                padding: 15px 10px;
+                transition: background-color 200ms ease-in;
+                border-radius: 7px;
+
+                &:hover {
+                    background-color: rgba(193, 215, 235, 0.1);
+                }
+            }
+            
+            
+        }
+    }
+}
+
+.link__wrapper > .page__link-active {   
+    text-decoration: none;
+    color: white;
+    display: block;                
+    padding: 15px 10px;
+    transition: background-color 200ms ease-in;
+    border-radius: 7px;
+    background-color: rgba(193, 215, 235, 0.1);
+}
